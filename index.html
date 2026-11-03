@@ -6,9 +6,24 @@
 <title>Mai Làm Labs</title>
 <link rel="icon" type="image/png" href="/mailam.png">
 <style>
-body { font: 16px/1.5 system-ui, sans-serif; max-width: 48rem; margin: 2rem auto; padding: 0 1rem; }
-header { display: flex; align-items: center; gap: 1rem; }
+/* the blog's look (blog.mailam.app): the system's serif, cream paper and soft ink, a narrow column */
+:root { --bg: #faf6ec; --fg: #3b3229; --fg-light: #6b5e50; --rule: #e6dece; --link: #8a4b2a; }
+body {
+  margin: 3rem auto; padding: 0 1.25rem; max-width: 40rem;
+  background: var(--bg); color: var(--fg);
+  font: 1.15rem/1.7 Charter, "Bitstream Charter", "Sitka Text", Cambria, "Noto Serif", "DejaVu Serif", Georgia, serif;
+}
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+header {
+  display: flex; align-items: center; gap: 1.25rem;
+  padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--rule);
+}
 header img { width: 6rem; height: auto; }
+h1 { margin: 0; font-size: 2.2em; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+header p { margin: 0.2rem 0 0; color: var(--fg-light); font-style: italic; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.8rem; }
 </style>
 </head>
 <body>
